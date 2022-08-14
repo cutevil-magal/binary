@@ -64,7 +64,7 @@ body {
   font-family: Lato; }
 /*---часть 1 ----*/
 .binary__background {
-  background-image: url("D:/разработка/new life/web/web/bem/bem/img/about/back.jpg");
+  background-image: url("../img/about/back.jpg");
 }
 
 .binary__top{
@@ -287,7 +287,7 @@ body {
     height: 520px;
 }
 .partners{
-    background-image: url("D:/разработка/new life/web/web/bem/bem/img/about/back.jpg");
+    background-image: url("../img/about/back.jpg");
     height: 480px;
 }
 .partners-icons{
