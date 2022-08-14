@@ -1,0 +1,363 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*--------------------*/
+body {
+  font-family: Lato; }
+/*---часть 1 ----*/
+.binary__background {
+  background-image: url("D:/разработка/new life/web/web/bem/bem/img/about/back.jpg");
+}
+
+.binary__top{
+    max-width: 823px;
+    margin: 0px auto;
+    height: 710px;
+    background-repeat: no-repeat;
+}
+
+.binary__logo{
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0px;
+}
+
+.binary__title{
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 34px;
+    text-align: center;
+}
+
+.binary__text{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0px 15px 0px;
+    padding: 0px 0px 35px 0px;
+    letter-spacing: 3px;    /*разряжение текста*/
+    position: relative;
+}
+/*--полоса--*/
+.text:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background-color: #ffffff;
+    margin: 0px 0px 0px -35px;
+}
+
+.binary__button{
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    margin: 140px 340px;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.binary__navigation, .portfolio__menu, .footer__menu{
+    height: 50px;
+    padding: 15px;
+    align-content: center;
+}
+
+.binary__menu, .portfolio__menu{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-items__home, .menu-items__all{
+    padding: 0px;
+    float: left;
+    display: flex;
+    padding: 0px 20px;
+    margin: 0px;
+    color: #FFB273;
+}
+.menu-items__aboutus, .menu-items__web,
+.menu-items__portfolio, .menu-items__apps,
+.menu-items__contact, .menu-items__other{
+    padding: 0px;
+    float: left;
+    display: flex;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+
+/*---часть 2 ----*/
+.about__body, .contact {
+  max-width: 823px;
+  margin: 0px auto;
+    padding: 90px 0px;
+}
+
+.about__header {
+  margin: 0px 0px 65px 0px; }
+
+.about__title, .portfolio__title, .contact__title {
+  margin: 0px 0px 30px 0px; }
+
+.about__text {
+  max-width: 688px;
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 25.89px;
+  margin: 0px auto; }
+
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  margin: 0px -15px; }
+
+.about__column {
+  padding: 0px 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%; }
+
+.title, .portfolio__title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 30px 0px; }
+  .title:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background-color: #000;
+    margin: 0px 0px 0px -25px; }
+
+.item-about__icon {
+  margin: 0px auto 40px auto;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  border: 2px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.item-about__title {
+  text-align: center;
+  color: #000000;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0px 0px 35px 0px; }
+
+.item-about__text {
+  text-align: center;
+  color: #868585;
+  line-height: 26px;
+  font-weight: 300;
+  font-size: 14px; }
+
+/*---часть 3 ----*/
+.portfolio{
+    background-color: #f5f5f5;
+    padding: 100px 0px;
+}
+.portfolio__menu{
+    margin: 0px 0px 60px 0px;
+}
+.photo_1, .photo_3, .photo_5{
+    float: left;
+    display: flex;
+    width: 50%;
+    padding: 0px 0px 40px 200px;
+    margin: 0px;
+    justify-content: space-around;
+}
+.photo_2, .photo_4, .photo_6{
+    float: left;
+    display: flex;
+    width: 50%;
+    padding: 0px 200px 40px 0px;
+    margin: 0px;
+    justify-content: space-around;
+}
+.portfolio_photo{
+    height: 1220px;
+}
+
+.portfolio__button{
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 690px;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+}
+/*---часть 4 ----*/
+.partners__title{
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-align: center;
+    padding: 110px 0px;
+}
+.partners_background {
+    padding: 0px 0px 70px 0px;
+    height: 520px;
+}
+.partners{
+    background-image: url("D:/разработка/new life/web/web/bem/bem/img/about/back.jpg");
+    height: 480px;
+}
+.partners-icons{
+    height: 160px;
+    padding: 0px 360px;
+}
+.icons_1, .icons_2, .icons_3, .icons_4{
+    float: left;
+    display: flex;
+    width: 25%;
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    justify-content: space-around;
+}
+/*---часть 5 ----*/
+input[type=text] {
+    width: 350px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+}
+input[type=text]:focus {
+    background-color: lightgray;
+}
+.contact{
+    height:500px;
+}
+.contact__info{
+    height: 200px;
+    margin: 80px 0px;
+}
+.contact-name, .contact-text{
+    float: left;
+    display: flex;
+    width: 50%;
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    justify-content: space-around;
+    flex-direction: column
+}
+.text__text, .text__name, text__email{
+    padding: 10px 0px;
+}
+/*---часть 6 ----*/
+footer{
+    height: 400px;
+    display: flex;
+    background-color: #333333;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer__logo{
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px 20px 0px;
+}
+.item1, .item2, .item3, .item4{
+    padding: 0px;
+    float: left;
+    display: flex;
+    padding: 0px 10px;
+    margin: 0px;
+}
+.footer__after{
+    text-align: center;
+    margin: 20px 0px
+}
+.footer__after, .footer__menu{
+    color:#686868;
+}
